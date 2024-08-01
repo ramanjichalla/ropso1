@@ -1,4 +1,20 @@
-this is morning time
-i am at the office
-need some time to offended
-this pavan so irritating
+pipeline {
+    agent any
+    stages {
+        stage ('Build') {
+            steps {
+                echo 'Building..' 
+            }
+        }
+        stage ('Test') {
+            steps {
+                echo 'Testing..'
+            }
+        }
+        stage ('Deploy') {
+            steps {
+                echo 'Deploying....'
+            }
+        }
+    }
+}
